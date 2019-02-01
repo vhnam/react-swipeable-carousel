@@ -1,0 +1,39 @@
+/* Foundation */
+
+.NextButton {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.NextButton.center {
+  top: 40%;
+  right: -1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.Icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 992px) {
+  .NextButton,
+  .NextButton.center {
+    top: 40%;
+    right: -3rem;
+  }
+
+  .Icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
