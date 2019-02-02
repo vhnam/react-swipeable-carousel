@@ -30,13 +30,13 @@ class Carousel extends Component {
     let index = (this.state.activeIndex + 1) % this.props.children.length;
 
     this.selectItem(index);
-  };
+  }
 
   selectItem = (index) => {
     this.setState({
       activeIndex: index,
     });
-  };
+  }
 
   generateContent = () => {
     const {children} = this.props;
@@ -58,7 +58,7 @@ class Carousel extends Component {
     });
 
     return items;
-  };
+  }
 
   generateIndicators = () => {
     const {activeIndex} = this.state;
@@ -78,7 +78,7 @@ class Carousel extends Component {
     });
 
     return items;
-  };
+  }
 
   onPrevButton = () => {
     let index = this.state.activeIndex;
@@ -93,7 +93,7 @@ class Carousel extends Component {
     this.setState({
       activeIndex: index,
     });
-  };
+  }
 
   onNextButton = () => {
     let index = this.state.activeIndex;
@@ -108,7 +108,7 @@ class Carousel extends Component {
     this.setState({
       activeIndex: index,
     });
-  };
+  }
 
   render() {
     const {controlsOnCenter, hideControls, hideIndicators} = this.props;

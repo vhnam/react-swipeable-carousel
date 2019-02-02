@@ -28,13 +28,13 @@ class GridCarousel extends Component {
     let index = (this.state.activeIndex + 1) % this.props.children.length;
 
     this.selectItem(index);
-  };
+  }
 
   selectItem = (index) => {
     this.setState({
       activeIndex: index,
     });
-  };
+  }
 
   generateContent = () => {
     const {children} = this.props;
@@ -60,7 +60,7 @@ class GridCarousel extends Component {
     });
 
     return items;
-  };
+  }
 
   generateIndicators = () => {
     const {activeIndex} = this.state;
@@ -80,7 +80,7 @@ class GridCarousel extends Component {
     });
 
     return items;
-  };
+  }
 
   onPrevButton = () => {
     let index = this.state.activeIndex;
@@ -95,7 +95,7 @@ class GridCarousel extends Component {
     this.setState({
       activeIndex: index,
     });
-  };
+  }
 
   onNextButton = () => {
     let index = this.state.activeIndex;
@@ -110,7 +110,7 @@ class GridCarousel extends Component {
     this.setState({
       activeIndex: index,
     });
-  };
+  }
 
   render() {
     const {hideIndicators} = this.props;

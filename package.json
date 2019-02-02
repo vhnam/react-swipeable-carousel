@@ -1,14 +1,13 @@
 {
   "name": "react-swipeable-carousel",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "React Swipeable Carousel",
   "main": "src/index.js",
   "author": "Nam Vo <vhnam2504@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack --mode production",
-    "prepublish": "npm run build"
+    "build": "webpack --mode production"
   },
   "peerDependencies": {
     "react": "16.x"
