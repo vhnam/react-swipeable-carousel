@@ -1,0 +1,11 @@
+.Indicator {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.Indicator.active {
+  background-color: #4a4a4a;
+}
