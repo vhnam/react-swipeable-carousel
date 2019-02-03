@@ -2,15 +2,18 @@
   "name": "react-swipeable-carousel",
   "version": "1.0.5",
   "description": "React Swipeable Carousel",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "author": "Nam Vo <vhnam2504@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack --mode production"
+    "build": "webpack -p",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "peerDependencies": {
-    "react": "16.x"
+    "react": "^16.x",
+    "react-dom": "^16.x"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -19,6 +22,7 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/preset-env": "^7.3.1",
