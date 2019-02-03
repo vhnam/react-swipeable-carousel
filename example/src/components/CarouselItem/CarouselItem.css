@@ -1,0 +1,26 @@
+/* Foundation */
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 10rem;
+  color: #454545;
+  background: #b993d6;
+  background: -webkit-linear-gradient(to right, #8ca6db, #b993d6);
+  background: linear-gradient(to right, #8ca6db, #b993d6);
+}
+
+.carousel-item.grid-item {
+  background: none;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 992px) {
+  .carousel-item.grid-item {
+    border-right: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+  }
+}
