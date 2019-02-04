@@ -8,11 +8,11 @@ React Swipeable Carousel
 
 - [Installation](#installation)
 - [Usage](#usage)
-  - Carousel
-  - GridCarousel
+  - [Carousel](#carousel)
+  - [Grid Carousel](#grid-carousel)
 - [Example](#example)
-  - Carousel
-  - GridCarousel
+  - [Carousel](#carousel-1)
+  - [Grid Carousel](#grid-carousel-1)
 - [Contributing](#contributing)
 - [License](#license)
 
